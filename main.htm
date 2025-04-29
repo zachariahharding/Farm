@@ -1,0 +1,952 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="">
+        <meta name="author" content="Matthias Edler-Golla, wachenfeld-golla.de">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta http-equiv="Pragma" content="no-cache"> 
+        <meta http-equiv="Cache-control" content="no-cache, must-revalidate"> 
+        <meta http-equiv="Expires" content="0"> 
+
+
+        <style type="text/css">
+            body{
+                // background-image: url(img/default.jpg); 
+                background: gray; 
+                background-size: 100%;
+
+                -moz-user-select: none; /*ff*/
+                -webkit-user-select: none; /*webkit*/
+                -ms-user-select: none; /*IE10*/
+                -khtml-user-select: none; /*old*/
+                user-select: none;
+            }
+            #wrap{
+                position:relative;
+                margin: auto;
+            }
+            #main{
+                position:relative; 
+                //margin: auto;
+                padding:0;
+                top:0;
+                left:0;
+                background-color: white;
+                //border:1px solid red;
+            }
+            .textCenter{
+                //MARGIN-LEFT: auto;
+                vertical-align:middle;
+                text-align:center;
+                //word-wrap:break-word;
+                text-overflow: ellipsis; 
+                overflow: hidden; 
+                white-space: nowrap; 
+            }
+        </style>
+        <link href="js/jqueryui/jqueryui.css" rel="stylesheet" type="text/css">
+        <link href="css/nav.css" rel="stylesheet" type="text/css"> 
+        <!-- this script helps older IE versions to understand html5 -->
+        <!--[if lt IE 9 ]>
+            <script src="js/html5.js"></script>
+        <![endif]-->
+        <script type="text/javascript" src="/js/utility.js?rdm=174589499"></script> 
+        <script type="text/javascript" src="/js/storage.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/bigint.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/encrypt.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/ajax.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/login.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/pagecommon.js?rdm=174589499"></script>
+        <script type="text/javascript" src="/js/binding.js?rdm=174589499"></script>
+        <script type="text/javascript" src="js/jquery.js?rdm=174589499"></script>
+        <script type="text/javascript" src="js/jqueryui/jqueryui.js?rdm=174589499"></script>
+        <script type="text/javascript" src="js/map.js?rdm=174589499"></script>
+        <script type="text/javascript" src="js/echart.js?rdm=174589499"></script>
+        <script type="text/javascript" src="js/render.js?rdm=174589499"></script> 
+        <script src="js/anavalue.js?rdm=1745894998252" type="text/javascript" id="js/anavalue.js"></script>
+ 
+    </head>
+    <body onload="loadPage()">  
+        <div style="position: fixed;top: 0;left: 0;width: 100%;height: 100%;z-index: 1000; background-color:gray;opacity: 0.98;" id="loadingDiv">
+            <p style="position: relative;text-align: center;color:white;top: 45%;" class="blink">LOADING...</p>
+        </div>
+        <div id="wrap">
+            <div id="main" onclick="renderJs.hideMenu()" prefix="Siemens" style="width: 340px; height: 1280px; left: 0px; top: 0px; text-align: center; margin: 0px; padding: 0px; background-image: url(&quot;img/743694CF.jpg&quot;); background-size: 360px 1301px; background-position: 0px 0px; background-repeat: no-repeat no-repeat;" bg_image="img/743694CF.jpg" class="main">
+                                                                                                                        
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                    
+            
+            
+                                
+        
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 114px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 2; background-repeat: no-repeat no-repeat;" range="131" address="1" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="420b9d7d92139da3b262" show_param="420b9d7d92139da3b262" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 114px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 3; background-repeat: no-repeat no-repeat;" range="130" address="1" type="1" length="1" on_text="" off_text="" id="4d13b1690af2869ed340" show_param="4d13b1690af2869ed340" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 195px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 4; background-repeat: no-repeat no-repeat;" range="131" address="2" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4156b84f60413df1fc55" show_param="4156b84f60413df1fc55" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 195px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 5; background-repeat: no-repeat no-repeat;" range="130" address="2" type="1" length="1" on_text="" off_text="" id="4e62972116399a60de43" show_param="4e62972116399a60de43" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 36px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 6; background-repeat: no-repeat no-repeat;" range="131" address="0" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="47f8a30b5ba587598721" show_param="47f8a30b5ba587598721" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 36px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 7; background-repeat: no-repeat no-repeat;" range="130" address="0" type="1" length="1" on_text="" off_text="" id="43379de37e8627cca972" show_param="43379de37e8627cca972" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 357px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 8; background-repeat: no-repeat no-repeat;" range="131" address="4" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="46179eaf6aca733a0f32" show_param="46179eaf6aca733a0f32" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 357px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 9; background-repeat: no-repeat no-repeat;" range="130" address="4" type="1" length="1" on_text="" off_text="" id="49a99fb0899ae8a4fc74" show_param="49a99fb0899ae8a4fc74" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 113px; top: 36px; width: 127px; height: 35px; background-size: 127px 36px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 10; background-repeat: no-repeat no-repeat;" id="41f48138ab075117728d" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 127px; height: 35px;">Barn</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 111px; top: 195px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 11; background-repeat: no-repeat no-repeat;" id="46f5916ac40478721223" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Barn Walkway</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 111px; top: 357px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 12; background-repeat: no-repeat no-repeat;" id="45d98fc92c40c6907ccc" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Chicken Run</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 111px; top: 114px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 13; background-repeat: no-repeat no-repeat;" id="43e99f96eee051e86df7" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Stall</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 56px; cursor: pointer; position: absolute; left: 82px; top: 866px; width: 56px; height: 56px; background-size: 56px 57px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 14; background-repeat: no-repeat no-repeat;" range="131" address="6" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="43f5a5fc5a90a6044942" show_param="43f5a5fc5a90a6044942" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 56px; height: 56px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 56px; cursor: pointer; position: absolute; left: 213px; top: 866px; width: 56px; height: 56px; background-size: 56px 57px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 15; background-repeat: no-repeat no-repeat;" range="131" address="8" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4109b10e7822a6fec881" show_param="4109b10e7822a6fec881" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 56px; height: 56px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 65px; top: 822px; width: 91px; height: 34px; background-size: 91px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 16; background-repeat: no-repeat no-repeat;" id="49419975cfc2db9f9081" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 91px; height: 34px;">All ON</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 113px; top: 276px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 17; background-repeat: no-repeat no-repeat;" id="452b90b44802e3d7b1df" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Barn Flood</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 276px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 18; background-repeat: no-repeat no-repeat;" range="131" address="23" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4cacbc154299e96f0fec" show_param="4cacbc154299e96f0fec" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 189px; top: 822px; width: 95px; height: 34px; background-size: 95px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 19; background-repeat: no-repeat no-repeat;" id="40ff8656a468af7aad17" degree="0" text_align="center">
+                                                                                                                    
+                
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 95px; height: 34px;">All OFF</p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                    
+            
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 276px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 20; background-repeat: no-repeat no-repeat;" range="130" address="8" type="1" length="1" on_text="" off_text="" id="464393c591a838c10b84" show_param="464393c591a838c10b84" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                                
+            
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 438px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 21; background-repeat: no-repeat no-repeat;" range="131" address="3" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="478f866d669c66c58159" show_param="478f866d669c66c58159" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 265px; top: 438px; width: 49px; height: 44px; background-size: 49px 45px; transform: rotate(0deg); background-image: url(&quot;img/8BDC031F.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 22; background-repeat: no-repeat no-repeat;" range="130" address="3" type="1" length="1" on_text="" off_text="" id="40b38980ef5f34c42e2a" show_param="40b38980ef5f34c42e2a" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/F020D28B.png" off_image="img/8BDC031F.png" bg_image="img/8BDC031F.png" mode="false" text_align="center">
+                                                                                                
+                
+                
+                
+                
+                <p style="width: 49px; height: 44px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 112px; top: 438px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 23; background-repeat: no-repeat no-repeat;" id="43999d112c5dcfc36149" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Coop</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 255px; top: 519px; width: 59px; height: 59px; background-size: 59px 60px; transform: rotate(0deg); background-image: url(&quot;img/8199B594.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 24; background-repeat: no-repeat no-repeat;" range="130" address="7" type="1" length="1" on_text="" off_text="" id="4e74a98eec6f502531a6" show_param="4e74a98eec6f502531a6" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/94C906E4.png" off_image="img/8199B594.png" bg_image="img/8199B594.png" mode="false" text_align="center">
+                                                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 59px; height: 59px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                                                        
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 115px; top: 519px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 25; background-repeat: no-repeat no-repeat;" id="4025a3b2a74ef05249b5" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Heat Lamp</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 255px; top: 615px; width: 59px; height: 59px; background-size: 59px 60px; transform: rotate(0deg); background-image: url(&quot;img/8199B594.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 26; background-repeat: no-repeat no-repeat;" range="130" address="6" type="1" length="1" on_text="" off_text="" id="4fcc834b1e217213a224" show_param="4fcc834b1e217213a224" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/94C906E4.png" off_image="img/8199B594.png" bg_image="img/8199B594.png" mode="false" text_align="center">
+                                                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 59px; height: 59px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                                                        
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 115px; top: 615px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 27; background-repeat: no-repeat no-repeat;" id="454f85dafd1fbf9969af" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Heat Trace</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 255px; top: 712px; width: 59px; height: 59px; background-size: 59px 60px; transform: rotate(0deg); background-image: url(&quot;img/EB0D7F22.png&quot;); cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 28; background-repeat: no-repeat no-repeat;" range="130" address="5" type="1" length="1" on_text="" off_text="" id="45aaa61282c25b5dc78d" show_param="45aaa61282c25b5dc78d" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/84C245A4.png" off_image="img/EB0D7F22.png" bg_image="img/EB0D7F22.png" mode="false" text_align="center">
+                                                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 59px; height: 59px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                                                        
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="PushButton" show_function="_callback_loadPushButton" class="server_binding textCenter" style="line-height: 49px; cursor: pointer; position: absolute; left: 33px; top: 712px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 29; background-repeat: no-repeat no-repeat;" range="131" address="22" type="1" length="1" on_text="" off_text="" frequency="1000" mouse_mode="Click" ontouchstart="renderJs.FuncTouchDown(this)" onmousedown="renderJs.FuncMouseDown(this)" onmouseout="renderJs.FuncMouseUp(this)" onmouseup="renderJs.FuncMouseUp(this)" ontouchend="renderJs.FuncTouchUp(this)" onclick="renderJs.onPushButtonClicked(this)" id="4a32b7270d66fa707178" show_param="4a32b7270d66fa707178" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" text_align="center">
+                                                                                                                                                                    
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                                                        
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 115px; top: 712px; width: 122px; height: 34px; background-size: 122px 35px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 30; background-repeat: no-repeat no-repeat;" id="422581c13d8f553eaaf2" degree="0" text_align="center">
+                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 34px;">Coop Fan</p>
+                                                                                            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 33px; top: 615px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 31; background-repeat: no-repeat no-repeat;" range="131" address="21" type="1" length="1" on_text="" off_text="" id="4662be6e5745bbb659c6" show_param="4662be6e5745bbb659c6" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" onclick="renderJs.setDigitalData(this)" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div comp_type="CustomizedComponent" show_function="_callback_loadCustomizedComponent" class="server_binding textCenter" style="position: absolute; left: 33px; top: 519px; width: 49px; height: 49px; background-size: 49px 50px; transform: rotate(0deg); background-image: url(&quot;img/746320CB.png&quot;); cursor: pointer; font-style: normal; font-family: Arial; font-size: 14px; color: rgb(0, 0, 0); z-index: 32; background-repeat: no-repeat no-repeat;" range="131" address="20" type="1" length="1" on_text="" off_text="" id="47b098b93023b0c488bf" show_param="47b098b93023b0c488bf" degree="0" tag_id="Private Tag" device_name="Farm" on_image="img/279FE024.png" off_image="img/746320CB.png" bg_image="img/746320CB.png" mode="true" onclick="renderJs.setDigitalData(this)" text_align="center">
+                                                                                                                
+                
+                
+                
+                
+                
+                <p style="width: 49px; height: 49px; display: table-cell; vertical-align: middle; text-align: center;"></p>
+                                                                                                            
+            
+            
+            
+            
+            
+            </div>
+                                                                        
+            
+            
+            
+            
+            <div class="TextComponent" comp_type="TextComponent" style="overflow: hidden; line-height: 100%; position: absolute; left: 111px; top: 965px; width: 122px; height: 44px; background-size: 122px 45px; transform: rotate(0deg); font-style: normal; font-weight: bold; font-family: &quot;Goudy Old Style&quot;; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204); z-index: 33; background-repeat: no-repeat no-repeat;" id="48b6a74f1d7df2f352c7" degree="0" text_align="center">
+                                                                                                                                                                    
+                
+                
+                
+                
+                
+                <p style="display: table-cell; vertical-align: middle; text-align: center; width: 122px; height: 44px;">Ambient Temperature</p>
+                                                                                                                                        
+            
+            
+            
+            
+            
+            </div>
+                                                                    
+            
+            
+            
+            
+            <div class="server_binding analog_input" comp_type="AnalogValueComponent" comp_version="8.3" show_function="_callback_analogValue" style="border: 0px solid red; text-align: right; position: absolute; left: 111px; top: 1010px; width: 122px; height: 44px; transform: rotate(0deg); background-color: rgb(204, 204, 204); z-index: 34;" range="20" address="0" type="4" length="1" show_param="447f95046a186b60fb11" id="447f95046a186b60fb11" degree="0" tag_id="Private Tag" device_name="Farm" block_format="Signed" decimal="10" mode="false" text_align="center">
+                                                                                    
+                
+                
+                
+                
+                <style class="invalid447f95046a186b60fb11">.invalid447f95046a186b60fb11:-moz-placeholder {color: rgb(0,0,0);}.invalid447f95046a186b60fb11::-moz-placeholder {color: rgb(0,0,0);}input.invalid447f95046a186b60fb11:-ms-input-placeholder {color: rgb(0,0,0);}input.invalid447f95046a186b60fb11::-webkit-input-placeholder {color: rgb(0,0,0);}</style>
+                                                                                
+                
+                
+                
+                <div class="valueText" style="">
+                                                                                                            <input class="inputVal invalid447f95046a186b60fb11" type="text" size="5" value="" style="width: 100%; height: 100%; text-align: center; cursor: not-allowed; font-style: normal; font-family: Arial; font-size: 18px; color: rgb(0, 0, 0); background-color: rgb(204, 204, 204);">        <span class="unit" style="position: absolute; top: 13px; font-style: normal; font-family: Arial; font-size: 18px; line-height: 18px; color: rgb(0, 0, 0);">℃</span>    
+                
+                
+                
+                
+                </div>
+                                                                                    
+                
+                
+                
+                
+                <div class="notice" style="color: red; font-style: normal; font-family: Arial; font-size: 18px;"></div>
+                                                                            
+            
+            
+            
+            </div>
+                                                            <script type="text/javascript" id="script_447f95046a186b60fb11"></script>
+        
+        
+        
+        
+        </div> 
+        </div>
+        <div id="timeout_dlg" style="display: none">Please check the network connection!</div>
+    
+
+
+</body></html>

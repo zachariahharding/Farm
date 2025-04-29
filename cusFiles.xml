@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CustomizeFiles>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\analogValue\comp.xml" count="6">
+        <ComponentIDs>
+            <ComponentID>4d899ccfe64b3238a522</ComponentID>
+            <ComponentID>44f78fc96302fdecebc6</ComponentID>
+            <ComponentID>447f95046a186b60fb11</ComponentID>
+            <ComponentID>4766b64569b52af2d383</ComponentID>
+            <ComponentID>4d178e53436bba89661e</ComponentID>
+            <ComponentID>4dffb90b3a908febbffa</ComponentID>
+        </ComponentIDs>
+        <Files>
+            <File>js\anavalue.js</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\webcam\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>css\webcam.css</File>
+            <File>js\video.js</File>
+            <File>js\webcam.js</File>
+            <File>css\video.css</File>
+        </Files>
+    </CustomizeComponent>
+    <CustomizeComponent xmlFileName="C:\Program Files\lwe\lwe\buildInCustomizeComponents\rainbow\comp.xml" count="0">
+        <ComponentIDs/>
+        <Files>
+            <File>js\rainbow.js</File>
+        </Files>
+    </CustomizeComponent>
+</CustomizeFiles>

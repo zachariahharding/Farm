@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<tVariableTable>
+    <variables>
+        <id>a3d93097-2ad7-42f2-afcd-51cb1753c38a</id>
+        <name>Morning ON</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="0">0</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>c8768c76-00f3-490c-992b-b396a7a6b8aa</id>
+        <name>Morning OFF</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="16">2</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>8ecd1bc4-a001-40ed-8b19-637bb1870765</id>
+        <name>Evening  ON</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="32">4</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>e2228594-c9f0-459e-a070-d854754456ec</id>
+        <name>Evening OFF</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="48">6</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>f94876a8-685e-4350-87a0-9d4094ddb6c2</id>
+        <name>Heat Trace Trigger</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="64">8</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>c87bc97c-1fe7-4a36-b960-3758283fd3e1</id>
+        <name>Heat Lamp Trigger</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="80">10</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>e3dff8a7-ea6b-488e-9029-26f60620305c</id>
+        <name>Coop Fan Trigger</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="96">12</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>0b15cf0c-a5f9-40cf-8bfa-87c1ea7e014a</id>
+        <name>Summer On Fan #1</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="112">14</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>0b0e6287-39f5-44f9-9eab-b706675b7ad9</id>
+        <name>Summer OFF Fan #1</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="128">16</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>3862f5d8-f9b7-47e5-b07b-d37de38e7e2c</id>
+        <name>Summer ON Fan #2</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="144">18</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>0592f124-4da7-44af-8b7b-e7a8bf9a1ea8</id>
+        <name>Summer OFF Fan #2</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="160">20</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>8c3fefea-3292-4737-8d75-1815cd76560b</id>
+        <name>Summer ON Fan #3</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="176">22</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+    <variables>
+        <id>53b9d8d1-79dd-4515-a271-96c96596429e</id>
+        <name>Summer OFF Fan #3</name>
+        <deviceName>Local Device</deviceName>
+        <blockType realvalue="132">VW</blockType>
+        <blockNum realvalue="192">24</blockNum>
+        <type realvalue="4">Word</type>
+        <length realvalue="1">1</length>
+    </variables>
+</tVariableTable>
